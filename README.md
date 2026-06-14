@@ -31,7 +31,32 @@ Built using React, Vite, Tailwind CSS, Recharts, React Hook Form, and validated 
    * Traces monthly trial records using Recharts dynamic lines.
    * Fully printable formatted sheets that can be downloaded/saved as clean PDF documents.
    * Single-click warning-protected total record purges.
+     
+6. **Security Features**
 
+   - Zod schema validation for all form inputs.
+   - Safe LocalStorage access and parsing.
+   - No use of dangerouslySetInnerHTML.
+   - Strong TypeScript typing to reduce runtime errors.
+   - Graceful error handling and fallback states.
+
+7. **Accessibility Features**
+
+   - Semantic HTML structure.
+   - Keyboard navigable UI.
+   - ARIA labels for interactive elements.
+   - High contrast design.
+   - Mobile responsive layouts.
+   - Focus indicators for accessibility.
+
+8. **Performance Optimizations**
+
+   - Lazy-loaded chart components.
+   - Memoized calculations.
+   - Optimized rendering patterns.
+   - Lightweight Vite bundling.
+   - Dynamic imports where appropriate.
+   - 
 ---
 
 ## 📂 Folder Structure

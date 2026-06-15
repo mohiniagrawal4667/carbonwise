@@ -184,17 +184,9 @@ export const Challenges: React.FC<ChallengesProps> = ({ progress, badges, toggle
                 </span>
               </div>
             ) : totalEmissionsCalculations === 0 ? (
-              // ✅ CHANGED: was <div onClick={...} className="... cursor-pointer">
-              // Now a <button type="button"> for native keyboard accessibility.
-              // Added focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2
-              // dark:focus-visible:ring-offset-slate-900 — the original div had no keyboard focus styles.
-              <button
-                type="button"
-                onClick={() => onNavigate('calculator')}
-                className="w-full p-4 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-150 rounded-xl text-center text-xs text-emerald-800 dark:text-emerald-300 font-semibold cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900"
-              >
+              <div className="p-4 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-150 rounded-xl text-center text-xs text-emerald-800 dark:text-emerald-300 font-semibold cursor-pointer" onClick={() => onNavigate('calculator')}>
                 🎯 Run the carbon footprint assessment to benchmark and set baseline emission reductions.
-              </button>
+              </div>
             ) : null}
           </div>
         </div>
